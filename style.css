@@ -380,22 +380,65 @@ p { color: var(--text-soft); }
 }
 
 .split-img img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; } .split-img { overflow: hidden;
-  height: 420px;
+  aspect-ratio: 0.582;
   border-radius: var(--radius);
   background: linear-gradient(150deg, var(--bg-cream-2), var(--rose));
   position: relative;
 }
 
+.brand-mark {
+     position: relative;
+     display: inline-block;
+     text-align: center;
+     margin-bottom: 6px;
+}
+
+.brand-mark .brand-monogram {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -58%);
+     font-family: "Mea Culpa", cursive;
+     font-size: 80px;
+     color: var(--brown-dark);
+     opacity: 0.18;
+     white-space: nowrap;
+     pointer-events: none;
+     line-height: 1;
+     z-index: 0;
+}
+
+.brand-mark .brand-name {
+     position: relative;
+     font-family: var(--font-serif);
+     font-style: italic;
+     font-weight: 600;
+     font-size: 44px;
+     color: var(--brown-dark);
+     z-index: 1;
+}
+
+.brand-mark .brand-role {
+     position: relative;
+     margin-top: 16px;
+     font-family: "Montserrat", sans-serif;
+     font-weight: 400;
+     font-size: 10px;
+     letter-spacing: 7px;
+     color: var(--brown);
+     z-index: 1;
+}
+
 .split-img::after {
-  content: "CA";
-  position: absolute;
-  bottom: 24px;
-  right: 24px;
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-size: 32px;
-  color: var(--white);
-  opacity: 0.85;
+     content: "CA";
+     position: absolute;
+     bottom: 24px;
+     right: 24px;
+     font-family: var(--font-serif);
+     font-style: italic;
+     font-size: 32px;
+     color: var(--white);
+     opacity: 0.85;
 }
 
 /* ---------- CTA banner ---------- */
@@ -602,8 +645,9 @@ form.contact-form label {
   }
 
 .split-img {
-  order: -1;
-  height: 260px;
+       order: -1;
+       aspect-ratio: unset;
+       height: 380px;
 }
 
 .grid-3 {
