@@ -157,9 +157,13 @@ p { color: var(--text-soft); }
 }
 
 .nav-brand {
-  position: relative;
   display: inline-block;
   line-height: 1;
+}
+
+.nav-brand .nav-brand-name-wrap {
+  position: relative;
+  display: inline-block;
 }
 
 .nav-brand .nav-brand-mono {
@@ -185,6 +189,17 @@ p { color: var(--text-soft); }
   color: var(--brown-dark);
   letter-spacing: 0.5px;
   z-index: 1;
+}
+
+.nav-brand .nav-brand-role {
+  display: block;
+  margin-top: 3px;
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--rose-dark);
 }
 
 .nav-links {
