@@ -294,19 +294,9 @@ p { color: var(--text-soft); }
 .hero-art {
   position: relative;
   height: 380px;
-  border-radius: var(--radius);
-  background: linear-gradient(160deg, var(--rose) 0%, var(--brown) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.hero-art::before {
-  content: "";
-  position: absolute;
-  inset: 18px;
-  border: 1px solid rgba(255, 253, 251, 0.4);
-  border-radius: 14px;
 }
 
 .hero-monogram {
@@ -317,7 +307,7 @@ p { color: var(--text-soft); }
 }
 
 .hero-photo-frame {
-  width: 200px;
+  width: 260px;
   aspect-ratio: 0.582;
   border-radius: 14px;
   overflow: hidden;
