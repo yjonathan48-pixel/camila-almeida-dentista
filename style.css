@@ -1,87 +1,87 @@
 /* ==========================================================================
-   Camila Almeida - Cirurgia Dentista
+   Camila Almeida - Cirurgiã-Dentista
    ========================================================================== */
 
 :root {
-    --bg-cream: #f3ede7;
-    --bg-cream-2: #e9ded4;
-    --rose: #cba587;
-    --rose-dark: #b98d6e;
-    --brown: #5c4433;
-    --brown-dark: #3e2f26;
-    --text-main: #3e2f26;
-    --text-soft: #6b5a4b;
-    --white: #fffdfb;
+  --bg-cream: #f3ede7;
+  --bg-cream-2: #e9ded4;
+  --rose: #cba587;
+  --rose-dark: #b98d6e;
+  --brown: #5c4433;
+  --brown-dark: #3e2f26;
+  --text-main: #3e2f26;
+  --text-soft: #6b5a4b;
+  --white: #fffdfb;
 
   --font-serif: "Playfair Display", "Georgia", serif;
-    --font-sans: "Poppins", "Segoe UI", sans-serif;
+  --font-sans: "Poppins", "Segoe UI", sans-serif;
 
   --radius: 18px;
-    --max-width: 1140px;
+  --max-width: 1140px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: var(--font-sans);
-    color: var(--text-main);
-    background: var(--bg-cream);
-    line-height: 1.65;
-    font-size: 16px;
+  font-family: var(--font-sans);
+  color: var(--text-main);
+  background: var(--bg-cream);
+  line-height: 1.65;
+  font-size: 16px;
 }
 
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .container {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 0 24px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 .section {
-    padding: 90px 0;
+  padding: 90px 0;
 }
 
 .section-alt {
-    background: var(--bg-cream-2);
+  background: var(--bg-cream-2);
 }
 
 .eyebrow {
-    font-family: var(--font-sans);
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-size: 13px;
-    color: var(--rose-dark);
-    font-weight: 600;
-    margin-bottom: 14px;
-    display: inline-block;
+  font-family: var(--font-sans);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: var(--rose-dark);
+  font-weight: 600;
+  margin-bottom: 14px;
+  display: inline-block;
 }
 
 h1, h2, h3, h4 {
-    font-family: var(--font-serif);
-    color: var(--brown-dark);
-    font-weight: 500;
-    line-height: 1.2;
+  font-family: var(--font-serif);
+  color: var(--brown-dark);
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 h1 { font-size: 48px; }
@@ -91,14 +91,14 @@ h3 { font-size: 22px; margin-bottom: 10px; }
 p { color: var(--text-soft); }
 
 .lead {
-    font-size: 19px;
-    max-width: 620px;
+  font-size: 19px;
+  max-width: 620px;
 }
 
 .center {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ---------- Buttons ---------- */
@@ -156,28 +156,45 @@ p { color: var(--text-soft); }
   margin: 0 auto;
 }
 
-.logo {
+.nav-brand {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+}
+
+.nav-brand .nav-brand-mono {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  font-family: "Mea Culpa", cursive;
+  font-size: 34px;
+  color: var(--brown-dark);
+  opacity: 0.18;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.nav-brand .nav-brand-name {
+  position: relative;
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: 24px;
+  font-weight: 600;
+  font-size: 23px;
   color: var(--brown-dark);
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
+  z-index: 1;
 }
 
-.logo span {
-  display: block;
-  font-family: var(--font-sans);
-  font-style: normal;
-  font-size: 10px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--rose-dark);
-  margin-top: 2px;
-}
-
-.nav-links li { display: flex; align-items: center; } .nav-links {
+.nav-links {
   display: flex;
   gap: 36px;
+  align-items: center;
+}
+
+.nav-links li {
+  display: flex;
   align-items: center;
 }
 
@@ -283,6 +300,22 @@ p { color: var(--text-soft); }
   color: rgba(255, 253, 251, 0.9);
 }
 
+.hero-photo-frame {
+  width: 200px;
+  aspect-ratio: 0.582;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(62, 47, 38, 0.3);
+}
+
+.hero-photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
 /* ---------- Stat / Trust strip ---------- */
 
 .trust-strip {
@@ -321,6 +354,20 @@ p { color: var(--text-soft); }
   gap: 28px;
 }
 
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.grid-4 .card {
+  padding: 26px 22px;
+}
+
+.grid-4 .card h3 {
+  font-size: 19px;
+}
+
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -347,6 +394,19 @@ p { color: var(--text-soft); }
   font-size: 22px;
 }
 
+.card .icon.icon-img {
+  background: none;
+  overflow: hidden;
+}
+
+.card .icon.icon-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
 .service-list {
   margin-top: 14px;
 }
@@ -365,7 +425,7 @@ p { color: var(--text-soft); }
 }
 
 .service-list li::before {
-  content: "-";
+  content: "•";
   color: var(--rose-dark);
   font-weight: 700;
 }
@@ -379,66 +439,64 @@ p { color: var(--text-soft); }
   align-items: center;
 }
 
-.split-img img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; } .split-img { overflow: hidden;
+.split-img {
   aspect-ratio: 0.582;
   border-radius: var(--radius);
   background: linear-gradient(150deg, var(--bg-cream-2), var(--rose));
   position: relative;
+  overflow: hidden;
+}
+
+.split-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
 }
 
 .brand-mark {
-     position: relative;
-     display: inline-block;
-     text-align: center;
-     margin-bottom: 6px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 6px;
 }
 
 .brand-mark .brand-monogram {
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -58%);
-     font-family: "Mea Culpa", cursive;
-     font-size: 80px;
-     color: var(--brown-dark);
-     opacity: 0.18;
-     white-space: nowrap;
-     pointer-events: none;
-     line-height: 1;
-     z-index: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -58%);
+  font-family: "Mea Culpa", cursive;
+  font-size: 80px;
+  color: var(--brown-dark);
+  opacity: 0.18;
+  white-space: nowrap;
+  pointer-events: none;
+  line-height: 1;
+  z-index: 0;
 }
 
 .brand-mark .brand-name {
-     position: relative;
-     font-family: var(--font-serif);
-     font-style: italic;
-     font-weight: 600;
-     font-size: 44px;
-     color: var(--brown-dark);
-     z-index: 1;
-}
-
-.brand-mark .brand-role {
-     position: relative;
-     margin-top: 16px;
-     font-family: "Montserrat", sans-serif;
-     font-weight: 400;
-     font-size: 10px;
-     letter-spacing: 7px;
-     color: var(--brown);
-     z-index: 1;
+  position: relative;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 44px;
+  color: var(--brown-dark);
+  z-index: 1;
 }
 
 .split-img::after {
-     content: "CA";
-     position: absolute;
-     bottom: 24px;
-     right: 24px;
-     font-family: var(--font-serif);
-     font-style: italic;
-     font-size: 32px;
-     color: var(--white);
-     opacity: 0.85;
+  content: "CA";
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 32px;
+  color: var(--white);
+  opacity: 0.85;
 }
 
 /* ---------- CTA banner ---------- */
@@ -644,66 +702,71 @@ form.contact-form label {
     grid-template-columns: 1fr;
   }
 
-.split-img {
-       order: -1;
-       aspect-ratio: unset;
-       height: 380px;
-}
+  .split-img {
+    order: -1;
+    aspect-ratio: unset;
+    height: 380px;
+  }
 
-.grid-3 {
-  grid-template-columns: repeat(2, 1fr);
-}
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-.footer-grid {
-  grid-template-columns: 1fr;
-}
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 640px) {
   h1 { font-size: 34px; }
   h2 { font-size: 28px; }
 
-.section {
-  padding: 60px 0;
-}
+  .section {
+    padding: 60px 0;
+  }
 
-.nav-links li { display: flex; align-items: center; } .nav-links {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background: var(--bg-cream);
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 24px;
-  gap: 18px;
-  border-bottom: 1px solid rgba(92, 68, 51, 0.1);
-  display: none;
-}
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg-cream);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 18px;
+    border-bottom: 1px solid rgba(92, 68, 51, 0.1);
+    display: none;
+  }
 
-.nav-links.open {
-  display: flex;
-}
+  .nav-links.open {
+    display: flex;
+  }
 
-.nav-toggle {
-  display: flex;
-}
+  .nav-toggle {
+    display: flex;
+  }
 
-.grid-2,
-  .grid-3 {
+  .grid-2,
+  .grid-3,
+  .grid-4 {
     grid-template-columns: 1fr;
   }
 
-.cta-banner,
+  .cta-banner,
   .benefit-banner {
     padding: 36px 24px;
   }
 
-.whatsapp-float {
-  bottom: 18px;
-  right: 18px;
-  width: 52px;
-  height: 52px;
-  font-size: 22px;
-}
+  .whatsapp-float {
+    bottom: 18px;
+    right: 18px;
+    width: 52px;
+    height: 52px;
+    font-size: 22px;
+  }
 }
