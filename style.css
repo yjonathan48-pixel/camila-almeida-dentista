@@ -494,15 +494,15 @@ p { color: var(--text-soft); }
 }
 
 .split-img::after {
-  content: "CA";
+  content: "Ca";
   position: absolute;
-  bottom: 24px;
-  right: 24px;
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-size: 32px;
+  bottom: 16px;
+  right: 20px;
+  font-family: "Mea Culpa", cursive;
+  font-size: 52px;
+  line-height: 1;
   color: var(--white);
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 /* ---------- CTA banner ---------- */
