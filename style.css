@@ -193,11 +193,11 @@ p { color: var(--text-soft); }
 
 .nav-brand .nav-brand-role {
   display: block;
-  margin-top: 3px;
+  margin-top: 15px;
   font-family: var(--font-sans);
   font-style: normal;
-  font-size: 2px;
-  letter-spacing: 2px;
+  font-size: 15px;
+  letter-spacing: 15px;
   text-transform: uppercase;
   color: var(--rose-dark);
 }
