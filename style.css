@@ -962,3 +962,164 @@ body {
   object-fit: cover;
   display: block;
 }
+
+/* ---------- Serviços em blocos ---------- */
+
+.ico {
+  width: 28px;
+  height: 28px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+.sec-head {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 52px;
+}
+
+.sec-head h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 10px 0 14px;
+}
+
+.c-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.c-tile {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  padding: 34px;
+  background: #fffdfb;
+  box-shadow: 0 10px 30px rgba(62, 47, 38, 0.07);
+}
+
+.c-tile.span2 {
+  grid-column: span 2;
+}
+
+.c-tile .c-num {
+  position: absolute;
+  right: 26px;
+  top: 10px;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 92px;
+  line-height: 1;
+  color: rgba(176, 129, 108, 0.16);
+}
+
+.c-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  border: 1px solid rgba(176, 129, 108, 0.5);
+  color: var(--rose-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 26px;
+}
+
+.c-tile h3 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+.c-tile.small h3 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.c-tile p {
+  font-size: 14px;
+}
+
+.c-list {
+  columns: 2;
+  column-gap: 28px;
+}
+
+.c-list li {
+  display: flex;
+  gap: 10px;
+  padding: 6px 0;
+  font-size: 14px;
+  break-inside: avoid;
+}
+
+.c-list li::before {
+  content: "✓";
+  color: var(--rose-dark);
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.c-tile.rose {
+  background: linear-gradient(145deg, #f1ddd3, #e8c9bb);
+}
+
+.c-tile.dark {
+  background: #3b2d24;
+  color: #f3ede7;
+}
+
+.c-tile.dark h3 {
+  color: #fffdfb;
+}
+
+.c-tile.dark p {
+  color: rgba(243, 237, 231, 0.8);
+}
+
+.c-tile.sand {
+  background: var(--bg-cream-2);
+  box-shadow: none;
+  border: 1px solid rgba(92, 68, 51, 0.12);
+}
+
+.c-tag {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 10.5px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--rose-dark);
+}
+
+.c-tile.dark .c-tag {
+  color: #e8c9bb;
+}
+
+@media (max-width: 900px) {
+  .c-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .c-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .c-tile.span2 {
+    grid-column: auto;
+  }
+
+  .c-list {
+    columns: 1;
+  }
+
+  .sec-head h2 {
+    font-size: 32px;
+  }
+}

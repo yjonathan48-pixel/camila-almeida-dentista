@@ -71,7 +71,7 @@
   </div>
 </div>
 
-<section class="section" id="sobre">
+<section class="section section-alt" id="sobre">
   <div class="container split">
     <div class="split-img"><img src="Imag/sobre.jpg.jpeg" width="720" height="976" alt="Dra. Camila Almeida" /></div>
     <div>
@@ -87,17 +87,20 @@
   </div>
 </section>
 
-<section class="section section-alt" id="servicos">
+<section class="section" id="servicos">
   <div class="container">
-    <span class="eyebrow center" style="display:block;">Serviços</span>
-    <h2 class="center">O que faço</h2>
-    <p class="lead center" style="margin-bottom:50px;">Atendimento personalizado — cada paciente é avaliado de forma individual, com um plano de tratamento pensado para as suas necessidades.</p>
+    <div class="sec-head">
+      <span class="eyebrow">Serviços</span>
+      <h2>Clínica geral e estética em um só lugar</h2>
+      <p class="lead">Atendimento personalizado: cada paciente é avaliado de forma individual.</p>
+    </div>
 
-    <div class="grid-4">
-      <div class="card">
-        <div class="icon icon-img"><img src="Imag/icon-clinica.png" width="160" height="160" alt="Clínica Geral" /></div>
+    <div class="c-grid">
+      <div class="c-tile span2">
+        <span class="c-num">01</span>
+        <div class="c-icon"><svg class="ico" viewBox="0 0 24 24"><path d="M12 5.2C10.6 3.8 7.4 3.3 6 5.4c-1.2 1.8-.4 4 .2 5.8.5 1.5.4 3.7 1.1 6.1.3 1 1.4 1.4 1.8.3.4-1.3.8-3.2 2.1-3.2.4 0 .8.1.8.1s.4-.1.8-.1c1.3 0 1.7 1.9 2.1 3.2.4 1.1 1.5.7 1.8-.3.7-2.4.6-4.6 1.1-6.1.6-1.8 1.4-4 .2-5.8-1.4-2.1-4.6-1.6-6-.2z"/></svg></div>
         <h3>Clínica Geral</h3>
-        <ul class="service-list">
+        <ul class="c-list">
           <li>Avaliação odontológica</li>
           <li>Prevenção e higiene oral</li>
           <li>Gengivite e controle de biofilme</li>
@@ -106,10 +109,11 @@
           <li>Placa de bruxismo</li>
         </ul>
       </div>
-      <div class="card">
-        <div class="icon icon-img"><img src="Imag/icon-estetica.png" width="160" height="160" alt="Estética" /></div>
+      <div class="c-tile span2 rose">
+        <span class="c-num" style="color:rgba(255,253,251,.4)">02</span>
+        <div class="c-icon" style="border-color:rgba(122,84,66,.5)"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 16l.7 1.8 1.8.7-1.8.7L19 21l-.7-1.8-1.8-.7 1.8-.7z"/></svg></div>
         <h3>Estética</h3>
-        <ul class="service-list">
+        <ul class="c-list">
           <li>Restaurações em resina</li>
           <li>Clareamento dental</li>
           <li>Recontorno estético</li>
@@ -118,34 +122,26 @@
           <li>Facetas dentárias</li>
         </ul>
       </div>
-      <div class="card">
-        <div class="icon icon-img"><img src="Imag/icon-laser.png" width="160" height="160" alt="Laser Odontológico" /></div>
+
+      <div class="c-tile small">
+        <div class="c-icon"><svg class="ico" viewBox="0 0 24 24"><path d="M13 2L5 14h6l-1 8 8-12h-6z"/></svg></div>
         <h3>Laser Odontológico</h3>
         <p>Tecnologia para procedimentos odontológicos com mais precisão e conforto.</p>
       </div>
-      <div class="card">
-        <div class="icon icon-img"><img src="Imag/icon-radio.png" width="160" height="160" alt="Radiografia Digital" /></div>
+      <div class="c-tile small">
+        <div class="c-icon"><svg class="ico" viewBox="0 0 24 24"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3"/><path d="M7 12h10"/></svg></div>
         <h3>Radiografia Digital</h3>
         <p>Exames de imagem com tecnologia digital para auxiliar no diagnóstico e planejamento dos tratamentos.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="diferenciais">
-  <div class="container">
-    <span class="eyebrow center" style="display:block;">Diferenciais</span>
-    <h2 class="center">Tecnologia a favor do seu conforto</h2>
-    <div class="grid-2" style="margin-top:40px;">
-      <div class="card">
-        <div class="icon">💧</div>
-        <h3>Limpeza profissional com Airflow</h3>
-        <p>Uma experiência de limpeza <strong>mais confortável</strong>, indicada para remoção de biofilme e manchas (para pacientes com sensibilidade), realizando raspagens delicadas.</p>
+      <div class="c-tile small dark">
+        <span class="c-tag">Diferencial</span>
+        <h3>Limpeza com Airflow</h3>
+        <p>Limpeza mais confortável, indicada para remoção de biofilme e manchas, inclusive para pacientes com sensibilidade.</p>
       </div>
-      <div class="card">
-        <div class="icon">🖥️</div>
+      <div class="c-tile small sand">
+        <span class="c-tag">Diferencial</span>
         <h3>Escaneamento intraoral</h3>
-        <p>Uma tecnologia que permite visualizar o sorriso em 3D, facilitar o planejamento e acompanhar a evolução do tratamento de forma digital.</p>
+        <p>Visualize o sorriso em 3D, facilite o planejamento e acompanhe a evolução do tratamento de forma digital.</p>
       </div>
     </div>
   </div>
