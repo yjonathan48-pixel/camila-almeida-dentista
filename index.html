@@ -5,7 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Dra. Camila Almeida | Cirurgiã-Dentista</title>
 <meta name="description" content="Dra. Camila Almeida, cirurgiã-dentista especializanda em Dentística pela USP. Clínica geral e estética dental com atendimento personalizado." />
+<script>document.documentElement.className += " is-loading";</script>
+<link rel="preload" as="image" href="img/hero.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="img/sobre.jpg">
+<link rel="preload" as="image" href="img/icon-clinica.png">
+<link rel="preload" as="image" href="img/icon-estetica.png">
+<link rel="preload" as="image" href="img/icon-laser.png">
+<link rel="preload" as="image" href="img/icon-radio.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css" />
 </head>
@@ -13,13 +21,13 @@
 
 <header class="site-header">
   <nav class="nav">
-    <a href="index.html" class="nav-brand"><span class="nav-brand-name-wrap"><span class="nav-brand-mono">Ca</span><span class="nav-brand-name">Camila Almeida</span></span><span class="nav-brand-role">Cirurgiã-Dentista</span></a>
+    <a href="#inicio" class="nav-brand"><span class="nav-brand-name-wrap"><span class="nav-brand-mono">Ca</span><span class="nav-brand-name">Camila Almeida</span></span><span class="nav-brand-role">Cirurgiã-Dentista</span></a>
     <ul class="nav-links">
-      <li><a href="index.html" class="active">Início</a></li>
-      <li><a href="sobre.html">Sobre</a></li>
-      <li><a href="servicos.html">Serviços</a></li>
-      <li><a href="contato.html">Contato</a></li>
-      <li><a href="contato.html" class="nav-cta">Agendar consulta</a></li>
+      <li><a href="#inicio" data-section="inicio">Início</a></li>
+      <li><a href="#sobre" data-section="sobre">Sobre</a></li>
+      <li><a href="#servicos" data-section="servicos">Serviços</a></li>
+      <li><a href="#contato" data-section="contato">Contato</a></li>
+      <li><a href="#contato" class="nav-cta">Agendar consulta</a></li>
     </ul>
     <button class="nav-toggle" aria-label="Abrir menu">
       <span></span><span></span><span></span>
@@ -27,20 +35,16 @@
   </nav>
 </header>
 
-<section class="hero">
+<section class="hero" id="inicio">
   <div class="container hero-grid">
     <div>
       <span class="eyebrow">Cirurgiã-Dentista</span>
       <h1>Cuidar do sorriso também é cuidar de você.</h1>
       <p class="lead">Tratamentos odontológicos que unem saúde, prevenção e estética — com atendimento personalizado e atenção aos detalhes em cada consulta.</p>
-      <div class="hero-actions">
-        <a href="https://wa.me/551138857806" target="_blank" class="btn btn-primary">Agendar pelo WhatsApp</a>
-        <a href="servicos.html" class="btn btn-outline">Ver serviços</a>
-      </div>
     </div>
     <div class="hero-art">
       <div class="hero-photo-frame">
-        <img src="https://github.com/user-attachments/assets/a9623b9a-a864-4569-ae4e-758d842204a6" alt="Dra. Camila Almeida" />
+        <img src="img/hero.jpg" width="496" height="853" alt="Dra. Camila Almeida" fetchpriority="high" />
       </div>
     </div>
   </div>
@@ -67,15 +71,31 @@
   </div>
 </div>
 
-<section class="section">
+<section class="section" id="sobre">
+  <div class="container split">
+    <div class="split-img"><img src="img/sobre.jpg" width="720" height="976" alt="Dra. Camila Almeida" /></div>
+    <div>
+      <span class="eyebrow">Sobre</span>
+      <h2>Quem sou eu?</h2>
+      <div class="brand-mark">
+        <div class="brand-monogram">Ca</div>
+        <div class="brand-name">Camila Almeida</div>
+      </div>
+      <p class="lead">Sou cirurgiã-dentista e especializanda em Dentística pela USP. Meu trabalho une saúde, prevenção e estética para proporcionar tratamentos personalizados, com atenção aos detalhes e ao conforto de cada paciente.</p>
+      <p style="margin-top:18px;">Cada paciente é avaliado de forma individual, para que o plano de tratamento se encaixe de verdade na sua rotina e nas suas necessidades — seja um cuidado preventivo, uma restauração ou um tratamento estético.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="servicos">
   <div class="container">
-    <span class="eyebrow center" style="display:block;">O que faço</span>
-    <h2 class="center">Clínica geral e estética em um só lugar</h2>
-    <p class="lead center" style="margin-bottom:50px;">Cada paciente é avaliado de forma individual, com um plano de tratamento pensado para as suas necessidades.</p>
+    <span class="eyebrow center" style="display:block;">Serviços</span>
+    <h2 class="center">O que faço</h2>
+    <p class="lead center" style="margin-bottom:50px;">Atendimento personalizado — cada paciente é avaliado de forma individual, com um plano de tratamento pensado para as suas necessidades.</p>
 
     <div class="grid-4">
       <div class="card">
-        <div class="icon icon-img"><img src="https://github.com/user-attachments/assets/6584d1e8-6f16-4bc4-8235-2f099eb9e486" alt="Clínica Geral" /></div>
+        <div class="icon icon-img"><img src="img/icon-clinica.png" width="160" height="160" alt="Clínica Geral" /></div>
         <h3>Clínica Geral</h3>
         <ul class="service-list">
           <li>Avaliação odontológica</li>
@@ -87,7 +107,7 @@
         </ul>
       </div>
       <div class="card">
-        <div class="icon icon-img"><img src="https://github.com/user-attachments/assets/802eedeb-8c4c-452b-976f-e90001888289" alt="Estética" /></div>
+        <div class="icon icon-img"><img src="img/icon-estetica.png" width="160" height="160" alt="Estética" /></div>
         <h3>Estética</h3>
         <ul class="service-list">
           <li>Restaurações em resina</li>
@@ -99,12 +119,12 @@
         </ul>
       </div>
       <div class="card">
-        <div class="icon icon-img"><img src="https://github.com/user-attachments/assets/83761b3d-15dc-4001-ad3f-8d7fa61f879b" alt="Laser Odontológico" /></div>
+        <div class="icon icon-img"><img src="img/icon-laser.png" width="160" height="160" alt="Laser Odontológico" /></div>
         <h3>Laser Odontológico</h3>
         <p>Tecnologia para procedimentos odontológicos com mais precisão e conforto.</p>
       </div>
       <div class="card">
-        <div class="icon icon-img"><img src="https://github.com/user-attachments/assets/0e6fd935-73f0-4115-9d64-6a5798f276fd" alt="Radiografia Digital" /></div>
+        <div class="icon icon-img"><img src="img/icon-radio.png" width="160" height="160" alt="Radiografia Digital" /></div>
         <h3>Radiografia Digital</h3>
         <p>Exames de imagem com tecnologia digital para auxiliar no diagnóstico e planejamento dos tratamentos.</p>
       </div>
@@ -112,12 +132,157 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="diferenciais">
   <div class="container">
-    <div class="cta-banner">
-      <h2>Vamos cuidar da sua saúde?</h2>
-      <p>Entre em contato e agende uma consulta.</p>
-      <a href="https://wa.me/551138857806" target="_blank" class="btn btn-primary" style="background:var(--rose); color:var(--brown-dark);">Falar no WhatsApp</a>
+    <span class="eyebrow center" style="display:block;">Diferenciais</span>
+    <h2 class="center">Tecnologia a favor do seu conforto</h2>
+    <div class="grid-2" style="margin-top:40px;">
+      <div class="card">
+        <div class="icon">💧</div>
+        <h3>Limpeza profissional com Airflow</h3>
+        <p>Uma experiência de limpeza <strong>mais confortável</strong>, indicada para remoção de biofilme e manchas (para pacientes com sensibilidade), realizando raspagens delicadas.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🖥️</div>
+        <h3>Escaneamento intraoral</h3>
+        <p>Uma tecnologia que permite visualizar o sorriso em 3D, facilitar o planejamento e acompanhar a evolução do tratamento de forma digital.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="ambiente">
+  <div class="container split">
+    <div class="carousel" role="region" aria-roledescription="carrossel" aria-label="Fotos do consultório">
+      <div class="carousel-viewport">
+        <div class="carousel-track">
+          <div class="carousel-slide"><img src="img/ambiente-1.jpg" width="720" height="960" alt="Sala de atendimento com cadeira odontológica e janela para o jardim" /></div>
+          <div class="carousel-slide"><img src="img/ambiente-2.jpg" width="720" height="960" alt="Bancada do consultório com armários brancos e espelho" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="img/ambiente-3.jpg" width="591" height="788" alt="Recepção do consultório com balcão e TV" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="img/ambiente-4.jpg" width="591" height="788" alt="Sala de espera com poltronas" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="img/ambiente-5.jpg" width="576" height="768" alt="Recepção e sala de espera iluminadas" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="img/ambiente-6.jpg" width="720" height="960" alt="Entrada do Consultório 1" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="img/ambiente-7.jpg" width="720" height="960" alt="Entrada do Consultório 2" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="img/ambiente-8.jpg" width="591" height="788" alt="Identificação na entrada do consultório" loading="lazy" /></div>
+        </div>
+      </div>
+      <button type="button" class="carousel-btn carousel-prev" aria-label="Foto anterior">&#8249;</button>
+      <button type="button" class="carousel-btn carousel-next" aria-label="Próxima foto">&#8250;</button>
+      <div class="carousel-dots"></div>
+    </div>
+    <div>
+      <span class="eyebrow">Ambiente</span>
+      <h2>Um espaço pensado para o seu conforto</h2>
+      <p class="lead">Um consultório organizado, limpo e acolhedor, para você se sentir bem desde a recepção até o fim do atendimento.</p>
+      <div class="hero-actions" style="margin-top:28px;">
+        <a href="#contato" class="btn btn-primary">Agendar consulta</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="avaliacoes">
+  <div class="container">
+    <span class="eyebrow center" style="display:block;">Avaliações</span>
+    <h2 class="center">O que dizem os pacientes</h2>
+    <div class="rating-summary">
+      <span class="rating-score">5,0</span>
+      <span class="stars" role="img" aria-label="5 de 5 estrelas">★★★★★</span>
+      <span class="rating-count">2 avaliações no Google</span>
+    </div>
+    <div class="grid-2 reviews">
+      <figure class="card review">
+        <div class="stars" role="img" aria-label="5 de 5 estrelas">★★★★★</div>
+        <blockquote>“Ambiente muito bem organizado e limpo, fora o atendimento da Dra Camila que foi sensacional, tirou todas as dúvidas no procedimento e depois dele também. …”</blockquote>
+        <figcaption><strong>Jonathan Oliveira</strong><span>Avaliação no Google</span></figcaption>
+      </figure>
+      <figure class="card review">
+        <div class="stars" role="img" aria-label="5 de 5 estrelas">★★★★★</div>
+        <blockquote>“Adorei o atendimento! O consultório é lindo, organizado e cheiroso. A Dra. Camila é maravilhosa, muito atenciosa e empática. Fui muito bem atendida.”</blockquote>
+        <figcaption><strong>Gabriela Almeida</strong><span>Avaliação no Google</span></figcaption>
+      </figure>
+    </div>
+    <div class="center" style="margin-top:36px;">
+      <a href="https://www.google.com/maps/place/Av.+Nove+de+Julho,+3229+-+Jardim+Paulista,+S%C3%A3o+Paulo+-+SP,+01407-000/@-23.5681294,-46.6624625,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce59c5138606ab:0x7209d3025757d4f6!8m2!3d-23.5681294!4d-46.6598876!16s%2Fg%2F11qh3p7tpk?entry=ttu&amp;g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-outline">Ver avaliações no Google</a>
+    </div>
+  </div>
+</section>
+<section class="section section-alt" id="resultados">
+  <div class="container">
+    <span class="eyebrow center" style="display:block;">Resultados</span>
+    <h2 class="center">Alguns resultados</h2>
+    <p class="lead center" style="margin-bottom:40px;">Casos reais de pacientes atendidos.</p>
+    <div class="grid-3">
+      <figure class="result-card"><img src="img/resultado-1.jpg" alt="Antes e depois de tratamento odontológico" loading="lazy" /></figure>
+      <figure class="result-card"><img src="img/resultado-2.jpg" alt="Escala de cor dos dentes em avaliação para clareamento" loading="lazy" /></figure>
+      <figure class="result-card"><img src="img/resultado-3.jpg" alt="Antes e depois de tratamento estético dos dentes" loading="lazy" /></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contato">
+  <div class="container">
+    <span class="eyebrow center" style="display:block;">Contato</span>
+    <h2 class="center">Vamos cuidar da sua saúde?</h2>
+    <p class="lead center" style="margin-bottom:50px;">Entre em contato e agende uma consulta.</p>
+  </div>
+  <div class="container contact-grid">
+    <div>
+      <h3>Informações de contato</h3>
+<ul class="contact-info-list">
+        <li>
+          <div class="icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.148.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 2C6.486 2 2.01 6.476 2.01 11.994c0 2.114.552 4.09 1.514 5.812L2 22l4.324-1.494a9.958 9.958 0 0 0 5.68 1.487h.004c5.518 0 9.994-4.476 9.994-9.994C22 6.476 17.522 2 12.004 2zm0 18.062h-.003a8.05 8.05 0 0 1-4.11-1.125l-.294-.175-3.05 1.056 1.02-3.02-.19-.302a8.06 8.06 0 0 1-1.235-4.302c0-4.45 3.62-8.068 8.07-8.068a8.02 8.02 0 0 1 5.706 2.365 8.02 8.02 0 0 1 2.362 5.703c0 4.45-3.618 8.068-8.276 8.068z"/></svg></div>
+          <div>
+            <strong>WhatsApp</strong>
+            <a href="https://wa.me/551138857806" target="_blank">(11) 3885-7806</a>
+          </div>
+        </li>
+        <li>
+          <div class="icon"><svg viewBox="0 0 24 24" width="22" height="22"><defs><linearGradient id="igGrad1" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FFDC80"/><stop offset="25%" stop-color="#FCAF45"/><stop offset="50%" stop-color="#E1306C"/><stop offset="75%" stop-color="#C13584"/><stop offset="100%" stop-color="#833AB4"/></linearGradient></defs><path fill="url(#igGrad1)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.148 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></div>
+          <div>
+            <strong>Instagram</strong>
+            <a href="https://instagram.com/dracamilalmeida" target="_blank">@dracamilalmeida</a>
+          </div>
+        </li>
+        <li>
+          <div class="icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="#c0392b"><path d="M12 2C7.802 2 4 5.403 4 9.6c0 5.4 6.5 11.6 7.1 12.2.2.2.5.3.9.3s.7-.1.9-.3c.6-.6 7.1-6.8 7.1-12.2C20 5.403 16.198 2 12 2zm0 10.4a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6z"/></svg></div>
+          <div>
+            <strong>Endereço</strong>
+            <a href="https://www.google.com/maps/place/Av.+Nove+de+Julho,+3229+-+Jardim+Paulista,+S%C3%A3o+Paulo+-+SP,+01407-000/@-23.5681294,-46.6624625,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce59c5138606ab:0x7209d3025757d4f6!8m2!3d-23.5681294!4d-46.6598876!16s%2Fg%2F11qh3p7tpk?entry=ttu&amp;g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Avenida Nove de Julho, 3229<br>CEP 01407-000</a>
+          </div>
+        </li>
+        <li>
+          <div class="icon">🕒</div>
+          <div>
+            <strong>Horário de atendimento</strong>
+            <span>Segunda a Sexta · 08:00 às 17:00</span>
+          </div>
+        </li>
+        <li>
+          <div class="icon">✉️</div>
+          <div>
+            <strong>E-mail</strong>
+            <a href="mailto:almeidacamila325@gmail.com">almeidacamila325@gmail.com</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Envie uma mensagem</h3>
+      <p style="margin-bottom:20px;">Preencha o formulário e sua mensagem será enviada diretamente pelo WhatsApp.</p>
+<form class="contact-form">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" placeholder="Seu nome completo" required />
+
+        <label for="phone">Telefone</label>
+        <input type="tel" id="phone" name="phone" placeholder="(11) 90000-0000" required />
+
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" placeholder="Como posso te ajudar?" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Enviar pelo WhatsApp</button>
+        <p class="form-note">Ao enviar, uma conversa será aberta no WhatsApp com sua mensagem já preenchida.</p>
+      </form>
     </div>
   </div>
 </section>
@@ -131,10 +296,10 @@
       </div>
       <div>
         <h4>Navegação</h4>
-        <a href="index.html">Início</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="servicos.html">Serviços</a>
-        <a href="contato.html">Contato</a>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
       </div>
       <div>
         <h4>Contato</h4>
