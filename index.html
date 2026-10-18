@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<script>function altImg(i){var a=(i.dataset.alt||"").split(" ");var n=a.shift();if(n){i.dataset.alt=a.join(" ");i.src=n;}}</script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon" type="image/jpeg" href="apple-touch-icon.jpeg">
@@ -45,8 +46,10 @@
       <p class="lead">Tratamentos odontológicos que unem saúde, prevenção e estética — com atendimento personalizado e atenção aos detalhes em cada consulta.</p>
     </div>
     <div class="hero-art">
-      <div class="hero-photo-frame">
-        <img src="Imag/hero.jpg.jpeg" width="496" height="853" alt="Dra. Camila Almeida" fetchpriority="high" />
+      <div class="hero-photo-frame" id="heroSlides">
+        <img class="hero-slide is-active" src="Imag/hero.jpg.jpeg" width="496" height="853" alt="Dra. Camila Almeida" fetchpriority="high" />
+        <img class="hero-slide" src="Imag/hero-2.jpg.jpeg" data-alt="Imag/hero-2.jpg Imag/hero-2.jpeg" onerror="altImg(this)" width="520" height="894" alt="Dra. Camila Almeida" loading="lazy" />
+        <img class="hero-slide" src="Imag/hero-3.jpg.jpeg" data-alt="Imag/hero-3.jpg Imag/hero-3.jpeg" onerror="altImg(this)" width="520" height="894" alt="Dra. Camila Almeida atendendo em consultório" loading="lazy" />
       </div>
     </div>
   </div>
@@ -209,10 +212,11 @@
     <span class="eyebrow center" style="display:block;">Resultados</span>
     <h2 class="center">Alguns resultados</h2>
     <p class="lead center" style="margin-bottom:40px;">Casos reais de pacientes atendidos.</p>
-    <div class="grid-3">
+    <div class="grid-3 results-grid">
       <figure class="result-card"><img src="Imag/resultado-1.jpg.jpeg" alt="Antes e depois de tratamento odontológico" loading="lazy" /></figure>
       <figure class="result-card"><img src="Imag/resultado-2.jpg.jpeg" alt="Escala de cor dos dentes em avaliação para clareamento" loading="lazy" /></figure>
       <figure class="result-card"><img src="Imag/resultado-3.jpg.jpeg" alt="Antes e depois de tratamento estético dos dentes" loading="lazy" /></figure>
+      <figure class="result-card"><img src="Imag/resultado-4.jpg.jpeg" data-alt="Imag/resultado-4.jpg Imag/resultado-4.jpeg" onerror="altImg(this)" alt="Antes e depois de tratamento estético dos dentes" loading="lazy" /></figure>
     </div>
   </div>
 </section>
@@ -316,5 +320,16 @@
 
 <script src="script.js"></script>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
-</body>
+<script>
+(function () {
+  var slides = document.querySelectorAll("#heroSlides .hero-slide");
+  if (slides.length < 2) return;
+  var i = 0;
+  setInterval(function () {
+    slides[i].classList.remove("is-active");
+    i = (i + 1) % slides.length;
+    slides[i].classList.add("is-active");
+  }, 5000);
+})();
+</script></body>
 </html>
