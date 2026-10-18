@@ -1151,7 +1151,7 @@ body {
   object-fit: cover;
   object-position: top center;
   opacity: 0;
-  transition: opacity 1.2s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
 }
 
 .hero-photo-frame .hero-slide.is-active {
