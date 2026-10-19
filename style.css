@@ -329,7 +329,7 @@ p { color: var(--text-soft); }
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
-  padding: 36px 0;
+  padding: 20px 0;
   border-top: 1px solid rgba(92, 68, 51, 0.12);
   border-bottom: 1px solid rgba(92, 68, 51, 0.12);
 }
@@ -338,6 +338,15 @@ p { color: var(--text-soft); }
   flex: 1;
   min-width: 180px;
   text-align: center;
+  padding: 16px 12px;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.trust-item:hover {
+  background: var(--white);
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 14px 30px rgba(62, 47, 38, 0.14);
 }
 
 .trust-item strong {
